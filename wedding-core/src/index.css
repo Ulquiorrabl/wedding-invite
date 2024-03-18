@@ -1,11 +1,15 @@
 :root {
+  --main-color: whitesmoke;
+  --support-color: rgb(190 228 251);
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
+  min-width: 350px;
+
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: black;
+  color: var(--main-color);
+  background-color: var(--support-color);
 
   overflow-x: hidden;
 

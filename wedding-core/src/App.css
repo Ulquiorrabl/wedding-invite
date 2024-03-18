@@ -1,8 +1,10 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  /* margin: 0 auto; */
+  padding: 0;
+  overflow-x: hidden;
   text-align: center;
+  --main-color: rgb(116, 202, 255);
 }
 
 @font-face {
@@ -10,8 +12,90 @@
   src: local("MarckScript-Regular"), url("./fonts/MarckScript-Regular.ttf") format("truetype");
 }
 
-.initials{
+.ms-text {
+  user-select: none;
   font-family: 'MS-Regular';
-  font-size: 100px;
-  color:blanchedalmond;
+}
+
+.invite {
+  font-size: 8vw;
+}
+
+.initials {
+  font-size: 25vw;
+}
+
+span {
+  font-size: 5vw;
+}
+
+.image-conteiner {
+  width: 100vw;
+}
+
+.date,
+.initials,
+.invite {
+  color: var(--main-color);
+}
+
+
+.content-feed {
+  position: absolute;
+  background-color: transparent;
+  z-index: 2;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.background-transparent {
+  z-index: -10;
+  background-color: rgb(12, 12, 12);
+  opacity: .8;
+  width: 100%;
+  height: 100%;
+}
+
+.content-feed-content {
+  width: 100%;
+  height: auto;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  justify-content: start;
+  align-items: center;
+  display: flex;
+  gap: .5rem;
+  flex-direction: column;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100vw;
+  gap: 1rem;
+}
+
+.background-image {
+  width: 150%;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 1300px) {
+  .content-feed {
+    left: 25%;
+    width: 50vw;
+    background-image: none;
+  }
+
+  #root {
+    margin: 0 auto;
+    --main-color: rgb(116, 202, 255);
+  }
 }

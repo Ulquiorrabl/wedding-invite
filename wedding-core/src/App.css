@@ -56,11 +56,10 @@ a:hover{
   justify-content: space-around;
   width: 100%;
   min-width: 400px;
-  gap: .5rem;
 }
 
 .header-img-icon{
-  height: clamp(2rem, 5vw, 12rem);
+  height: 1.5rem;
 }
 
 .header-img-icon-left{
@@ -86,7 +85,7 @@ span {
 .header{
   font-size: clamp(20px, 6vw, 40px);
   color: var(--main-color);
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .header2,
@@ -143,7 +142,7 @@ span {
 
 .content-feed-content {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1300px;
   height: 100%;
   z-index: 2;
   position: relative;
@@ -155,7 +154,7 @@ span {
   flex-direction: column;
   min-width: 380px;
   padding: 0 1rem;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .image-container {
@@ -192,9 +191,9 @@ span.place-text{
 }
 
 @media screen and (min-width: 1300px) {
-  .content-feed {
+  .header-img-icon{
+    height: 9rem;
   }
-
   .background-image{
     width: 100%;
   }

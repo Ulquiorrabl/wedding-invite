@@ -21,9 +21,6 @@ const queries = {
 function App() {
   return (
     <div className='main-container'>
-      {/* <div className='image-container'>
-        <img className='background-image' src={ringPhoto}></img>
-      </div> */}
       <div className='content-feed'>
         <div className='content-feed-content'>
           <Media queries={queries}>

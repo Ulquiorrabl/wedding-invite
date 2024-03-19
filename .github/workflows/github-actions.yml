@@ -20,8 +20,8 @@ jobs:
       - name: Push Build
         uses: s0/git-publish-subdir-action@develop
         env:
-          repo: self
-          branch: build
-          folder: dist
+          REPO: self
+          BRANCH: build
+          FOLDER: dist
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MESSAGE: ${{ steps.date.outputs.date }}

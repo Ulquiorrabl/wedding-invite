@@ -67,7 +67,7 @@ function App() {
           <span className='exo-text header'>Программа</span>
           <ul>
             <li className='b1'>15:00 - Сбор гостей около <a href="https://yandex.by/maps/org/hrodnenska_oblasna_filarmoniia/127044541592/?ll=23.822186%2C53.668056&z=17.05"><span className='exo-text b1 link-text place-text'>Гродненская областная филармония</span><img className='svg' src={mapPoint}></img></a> для трансфера к месту проведения мероприятия</li>
-            <li className='b1'>15:30 - Фуршет</li>
+            <li className='b1'>15:30 - Приветственный фуршет</li>
             <li className='b1'>16:00 - Церемония бракосочетания</li>
             <li className='b1'>17:00 - Праздничный банкет</li>
           </ul>

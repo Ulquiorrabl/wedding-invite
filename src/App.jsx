@@ -21,15 +21,10 @@ const queries = {
 function App() {
   return (
     <div className='main-container'>
-      <div className='image-container'>
-        {/* <div className='background-transparent'>
-        </div> */}
-        {/* <img className='background-image' src={togetherWall}></img> */}
+      {/* <div className='image-container'>
         <img className='background-image' src={ringPhoto}></img>
-      </div>
+      </div> */}
       <div className='content-feed'>
-        {/* <div className='background-transparent'>
-        </div> */}
         <div className='content-feed-content'>
           <Media queries={queries}>
             {matches => (
@@ -55,7 +50,6 @@ function App() {
                   </>}
                   {matches.pc && <>
                     <img className='header-img-icon header-img-icon-left' src={hearts}></img>
-                    {/* <img className='header-img' src={togetherWallColor}></img> */}
                     <span className='exo-text invite'>Приглашаем на свадьбу</span>
                     <img className='header-img-icon header-img-icon-right' alt='15 июня 2024' src={rings}></img>
                   </>}
@@ -64,7 +58,6 @@ function App() {
             </Media>
 
           </div>
-          {/* <span className='exo-text header'>Дата</span> */}
           <img className='calendar-image' src={calendar}></img>
           <span className='exo-text header'>Место проведения</span>
           <a href='https://yandex.by/maps/org/usadba_iva_park/153258836002/?ll=23.874049%2C53.562482&z=17' className='link-place'><img className='svg' src={mapPoint}></img><span className='exo-text header2 link-text place-text'>Усадьба "Ива Парк", 13км от г. Гродно</span></a>

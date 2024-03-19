@@ -40,8 +40,11 @@ a:hover {
   font-size: clamp(15px, 7vw, 70px);
 }
 
-.calendar-image {
-  width: 75%;
+.calendar-image,
+.place-image {
+  width: 80%;
+  min-width: 300px;
+  box-shadow: 15px 15px 0 var(--support-color);
 }
 
 .header-img {
@@ -98,10 +101,7 @@ span {
   min-width: 400px;
 }
 
-.place-image {
-  width: 80%;
-  min-width: 300px;
-}
+
 
 .photo-box-shadow {
   box-shadow: 10px 10px 0 var(--support-color);

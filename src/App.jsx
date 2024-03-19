@@ -1,8 +1,8 @@
-// import Media from 'react-media';
+import Media from 'react-media';
 import './App.css'
 
-// import ringPhoto from './images/ring-photo.jpg';
-import togetherWall from './images/together-wall.jpg';
+import ringPhoto from './images/ring-photo.jpg';
+// import togetherWall from './images/together-wall.jpg';
 // import togetherWallColor from './images/together-wall-color.jpg';
 import iva1 from './images/iva1.jpg';
 
@@ -13,23 +13,56 @@ import rings from './svgs/rings.svg';
 import calendar from './images/calendar.png';
 
 
+const queries = {
+  mobile: "(max-width: 1299px)",
+  pc: "(min-width: 1300px)"
+}
+
 function App() {
   return (
     <div className='main-container'>
       <div className='image-container'>
-        <img className='background-image' src={togetherWall}></img>
-        {/* <img className='background-image' src={ringPhoto}></img> */}
+        {/* <div className='background-transparent'>
+        </div> */}
+        {/* <img className='background-image' src={togetherWall}></img> */}
+        <img className='background-image' src={ringPhoto}></img>
       </div>
       <div className='content-feed'>
-        <div className='background-transparent'>
-        </div>
+        {/* <div className='background-transparent'>
+        </div> */}
         <div className='content-feed-content'>
-          <span className='ms-text initials'>K + V</span>
+          <Media queries={queries}>
+            {matches => (
+              <>
+                {matches.mobile && <div className='header-img-container'>
+                  <img className='header-img-icon header-img-icon-left' src={hearts}></img>
+                  <span className='ms-text initials'>K + V</span>
+                  <img className='header-img-icon header-img-icon-right' alt='15 июня 2024' src={rings}></img>
+                </div>}
+                {matches.pc && <>
+                  <span className='ms-text initials'>K + V</span>
+                </>}
+              </>
+            )}
+          </Media>
+
           <div className='header-img-container'>
-            <img className='header-img-icon header-img-icon-left' src={hearts}></img>
-            {/* <img className='header-img' src={togetherWallColor}></img> */}
-            <span className='exo-text invite'>Приглашаем на свадьбу</span>
-            <img className='header-img-icon header-img-icon-right' alt='15 июня 2024' src={rings}></img>
+            <Media queries={queries}>
+              {matches => (
+                <>
+                  {matches.mobile && <>
+                    <span className='exo-text invite'>Приглашаем на свадьбу</span>
+                  </>}
+                  {matches.pc && <>
+                    <img className='header-img-icon header-img-icon-left' src={hearts}></img>
+                    {/* <img className='header-img' src={togetherWallColor}></img> */}
+                    <span className='exo-text invite'>Приглашаем на свадьбу</span>
+                    <img className='header-img-icon header-img-icon-right' alt='15 июня 2024' src={rings}></img>
+                  </>}
+                </>
+              )}
+            </Media>
+
           </div>
           {/* <span className='exo-text header'>Дата</span> */}
           <img className='calendar-image' src={calendar}></img>
@@ -45,8 +78,20 @@ function App() {
           <span className='exo-text header'>Детали</span>
           <span className='exo-text b1'>К сожалению, долго наслаждаться красотой подаренных цветов нам не удастся, поэтому, если вместо них вы решите подарить нам бутылочку алкоголя, мы будем безумно рады.  </span>
           <span className='exo-text header'>Контакты для связи в день свадьбы</span>
-          <span className='exo-text b1'>Организатор/Координатор Щука Татьяна: 8033 341-17-66</span>
-          <span className='exo-text b1'>{'Балицкая Татьяна Николаевна (мама Кати)'}: +375 29 677-43-16</span>
+          <Media queries={queries}>
+            {matches => (
+              <>
+                {matches.mobile && <>
+                  <span className='exo-text b1'>Организатор/Координатор Щука Татьяна: <br></br>8033 341-17-66</span>
+                  <span className='exo-text b1'>{'Балицкая Татьяна Николаевна (мама Кати)'}: <br></br>+375 29 677-43-16</span>
+                </>}
+                {matches.pc && <>
+                  <span className='exo-text b1'>Организатор/Координатор Щука Татьяна: 8033 341-17-66</span>
+                  <span className='exo-text b1'>{'Балицкая Татьяна Николаевна (мама Кати)'}: +375 29 677-43-16</span>
+                </>}
+              </>
+            )}
+          </Media>
         </div>
       </div>
     </div>

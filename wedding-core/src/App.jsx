@@ -17,19 +17,19 @@ function App() {
   return (
     <div className='main-container'>
       <div className='image-container'>
-          <img className='background-image' src={ringPhoto}></img>
-          {/* <img className='background-image' src={togetherWall}></img> */}
+        <img className='background-image' src={ringPhoto}></img>
+        {/* <img className='background-image' src={togetherWall}></img> */}
       </div>
       <div className='content-feed'>
-      <div className='background-transparent'>
+        <div className='background-transparent'>
         </div>
         <div className='content-feed-content'>
           <span className='ms-text initials'>K + V</span>
           <span className='exo-text invite'>Приглашаем на свадьбу</span>
           <div className='header-img-container'>
-          <img className='header-img-icon header-img-icon-left' src={hearts}></img>
-          <img className='header-img' src={togetherWall}></img>
-          <img className='header-img-icon header-img-icon-right' src={rings}></img>
+            <img className='header-img-icon header-img-icon-left' src={hearts}></img>
+            <img className='header-img' src={togetherWall}></img>
+            <img className='header-img-icon header-img-icon-right' src={rings}></img>
           </div>
           <span className='exo-text header'>Дата</span>
           <img className='calendar-image' src={calendar}></img>

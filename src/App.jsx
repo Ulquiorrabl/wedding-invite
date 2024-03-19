@@ -1,7 +1,7 @@
 import Media from 'react-media';
 import './App.css'
 
-import ringPhoto from './images/ring-photo.jpg';
+// import ringPhoto from './images/ring-photo.jpg';
 // import togetherWall from './images/together-wall.jpg';
 // import togetherWallColor from './images/together-wall-color.jpg';
 import iva1 from './images/iva1.jpg';
@@ -23,42 +23,47 @@ function App() {
     <div className='main-container'>
       <div className='content-feed'>
         <div className='content-feed-content'>
-          <Media queries={queries}>
-            {matches => (
-              <>
-                {matches.mobile && <div className='header-img-container'>
-                  <img className='header-img-icon header-img-icon-left' src={hearts}></img>
-                  <span className='ms-text initials'>K + V</span>
-                  <img className='header-img-icon header-img-icon-right' alt='15 июня 2024' src={rings}></img>
-                </div>}
-                {matches.pc && <>
-                  <span className='ms-text initials'>K + V</span>
-                </>}
-              </>
-            )}
-          </Media>
+          <div className='header-div'>
+            <div className='header-content-div'>
+              <Media queries={queries}>
+                {matches => (
+                  <>
+                    {matches.mobile && <div className='header-img-container'>
+                      <img className='header-img-icon header-img-icon-left' src={hearts}></img>
+                      <span className='ms-text initials'>K + V</span>
+                      <img className='header-img-icon header-img-icon-right' alt='15 июня 2024' src={rings}></img>
+                    </div>}
+                    {matches.pc && <>
+                      <span className='ms-text initials'>K + V</span>
+                    </>}
+                  </>
+                )}
+              </Media>
 
-          <div className='header-img-container'>
-            <Media queries={queries}>
-              {matches => (
-                <>
-                  {matches.mobile && <>
-                    <span className='exo-text invite'>Приглашаем на свадьбу</span>
-                  </>}
-                  {matches.pc && <>
-                    <img className='header-img-icon header-img-icon-left' src={hearts}></img>
-                    <span className='exo-text invite'>Приглашаем на свадьбу</span>
-                    <img className='header-img-icon header-img-icon-right' alt='15 июня 2024' src={rings}></img>
-                  </>}
-                </>
-              )}
-            </Media>
+              <div className='header-img-container'>
+                <Media queries={queries}>
+                  {matches => (
+                    <>
+                      {matches.mobile && <>
+                        <span className='exo-text invite'>Приглашаем на свадьбу</span>
+                      </>}
+                      {matches.pc && <>
+                        <img className='header-img-icon header-img-icon-left' src={hearts}></img>
+                        <span className='exo-text invite'>Приглашаем на свадьбу</span>
+                        <img className='header-img-icon header-img-icon-right' alt='15 июня 2024' src={rings}></img>
+                      </>}
+                    </>
+                  )}
+                </Media>
+              </div>
+            </div>
 
           </div>
-          <img className='calendar-image' src={calendar}></img>
+          <span className='exo-text header'>Дата</span>
+          <img className='calendar-image photo-box-shadow' src={calendar}></img>
           <span className='exo-text header'>Место проведения</span>
-          <a href='https://yandex.by/maps/org/usadba_iva_park/153258836002/?ll=23.874049%2C53.562482&z=17' className='link-place'><img className='svg' src={mapPoint}></img><span className='exo-text header2 link-text place-text'>Усадьба "Ива Парк", 13км от г. Гродно</span></a>
-          <img className='place-image' src={iva1}></img>
+          <a href='https://yandex.by/maps/org/usadba_iva_park/153258836002/?ll=23.874049%2C53.562482&z=17' className='link-place'><img className='svg' src={mapPoint}></img><span className='exo-text header2 link-text place-text'>{'Усадьба "Ива Парк", 13км от г. Гродно'}</span></a>
+          <img className='place-image photo-box-shadow' src={iva1}></img>
           <span className='exo-text header'>Программа</span>
           <ul>
             <li className='b1'>15:00 - Сбор гостей около <a href="https://yandex.by/maps/org/hrodnenska_oblasna_filarmoniia/127044541592/?ll=23.822186%2C53.668056&z=17.05"><span className='exo-text b1 link-text place-text'>Гродненская областная филармония</span><img className='svg' src={mapPoint}></img></a> для трансфера к месту проведения мероприятия</li>

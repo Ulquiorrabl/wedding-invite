@@ -39,15 +39,29 @@ a:hover {
   font-size: clamp(15px, 7vw, 75px);
 }
 
+.header-content-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15% 0;
+  max-height: 35rem;
+  border-bottom: 10px solid black;
+}
+
+.header-content-div,
+.header-div {
+  width: 100%;
+}
+
+.header-div {
+  background-image: url('./images/together-wall.jpg');
+  background-position: 80% 10%;
+  background-size: cover;
+}
+
 .calendar-image,
 .place-image {
   width: 80%;
-  box-shadow: 15px 15px 0 var(--support-color);
-}
-
-.header-img {
-  width: 75%;
-  box-shadow: 10px 10px 0 var(--support-color);
 }
 
 .header-img-container {
@@ -93,7 +107,7 @@ span {
 }
 
 .photo-box-shadow {
-  box-shadow: 10px 10px 0 var(--support-color);
+  box-shadow: 20px 20px 0 black;
 }
 
 .b1 {
@@ -124,8 +138,12 @@ span {
   justify-content: center;
 }
 
+.header-content-div,
 .content-feed-content {
-  background-color: rgb(0, 0, 0, .7);
+  background-color: rgb(0, 0, 0, .7)
+}
+
+.content-feed-content {
   width: 100%;
   z-index: 2;
   position: relative;

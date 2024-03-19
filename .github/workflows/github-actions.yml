@@ -15,8 +15,13 @@ jobs:
         run: npm install
       - name: Build Project
         run: npm run build
-      - name: Upload artifact to enable deployment
-        uses: actions/upload-artifact@v4
-        with:
-          name: production-files
-          path: ./dist
+      - name: Get Current Date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+      - name: Push Build
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          repo: self
+          branch: build
+          folder: dist
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MESSAGE: ${{ steps.date.outputs.date }}

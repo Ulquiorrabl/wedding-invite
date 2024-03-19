@@ -1,9 +1,9 @@
 // import Media from 'react-media';
 import './App.css'
 
-import ringPhoto from './images/ring-photo.jpg';
-// import togetherWall from './images/together-wall.jpg';
-import togetherWall from './images/together-wall-color.jpg';
+// import ringPhoto from './images/ring-photo.jpg';
+import togetherWall from './images/together-wall.jpg';
+// import togetherWallColor from './images/together-wall-color.jpg';
 import iva1 from './images/iva1.jpg';
 
 import mapPoint from './svgs/map-point.svg';
@@ -17,21 +17,21 @@ function App() {
   return (
     <div className='main-container'>
       <div className='image-container'>
-        <img className='background-image' src={ringPhoto}></img>
-        {/* <img className='background-image' src={togetherWall}></img> */}
+        <img className='background-image' src={togetherWall}></img>
+        {/* <img className='background-image' src={ringPhoto}></img> */}
       </div>
       <div className='content-feed'>
         <div className='background-transparent'>
         </div>
         <div className='content-feed-content'>
           <span className='ms-text initials'>K + V</span>
-          <span className='exo-text invite'>Приглашаем на свадьбу</span>
           <div className='header-img-container'>
             <img className='header-img-icon header-img-icon-left' src={hearts}></img>
-            <img className='header-img' src={togetherWall}></img>
-            <img className='header-img-icon header-img-icon-right' src={rings}></img>
+            {/* <img className='header-img' src={togetherWallColor}></img> */}
+            <span className='exo-text invite'>Приглашаем на свадьбу</span>
+            <img className='header-img-icon header-img-icon-right' alt='15 июня 2024' src={rings}></img>
           </div>
-          <span className='exo-text header'>Дата</span>
+          {/* <span className='exo-text header'>Дата</span> */}
           <img className='calendar-image' src={calendar}></img>
           <span className='exo-text header'>Место проведения</span>
           <a href='https://yandex.by/maps/org/usadba_iva_park/153258836002/?ll=23.874049%2C53.562482&z=17' className='link-place'><img className='svg' src={mapPoint}></img><span className='exo-text header2 link-text place-text'>Усадьба "Ива Парк", 13км от г. Гродно</span></a>

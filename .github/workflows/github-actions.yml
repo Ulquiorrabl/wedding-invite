@@ -15,8 +15,8 @@ jobs:
         run: npm install
       - name: Build Project
         run: npm run build
-      - name: Get Current Date
-        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+      - name: Copy CPanel Deployment YAML
+        run: cp .cpanel.yml dist/
       - name: Push Build
         uses: s0/git-publish-subdir-action@develop
         env:
@@ -24,4 +24,4 @@ jobs:
           BRANCH: build
           FOLDER: dist
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          MESSAGE: ${{ steps.date.outputs.date }}
+          MESSAGE: "Build Stage"

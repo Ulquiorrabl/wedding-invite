@@ -77,8 +77,8 @@ function App() {
             {matches => (
               <>
                 {matches.mobile && <>
-                  <span className='exo-text b1'>Организатор/Координатор Щука Татьяна: <br></br>8033 341-17-66</span>
-                  <span className='exo-text b1'>{'Балицкая Татьяна Николаевна (мама Кати)'}: <br></br>+375 29 677-43-16</span>
+                  <span className='exo-text b1'>Организатор/Координатор <br></br> Щука Татьяна <br></br>8033 341-17-66</span>
+                  <span className='exo-text b1'>Мама невесты <br></br> Балицкая Татьяна Николаевна <br></br>+375 29 677-43-16</span>
                 </>}
                 {matches.pc && <>
                   <span className='exo-text b1'>Организатор/Координатор Щука Татьяна: 8033 341-17-66</span>

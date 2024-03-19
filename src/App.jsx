@@ -44,9 +44,9 @@ function App() {
           </ul>
           <span className='exo-text header'>Детали</span>
           <span className='exo-text b1'>К сожалению, долго наслаждаться красотой подаренных цветов нам не удастся, поэтому, если вместо них вы решите подарить нам бутылочку алкоголя, мы будем безумно рады.  </span>
-          {/* <span className='exo-text header'>Контакты для связи в день свадьбы</span>
-          <span className='exo-text b1'>Организатор/Координатор Татьяна: 8033 341-17-66</span>  */}
-          {/* <span className='exo-text b1'>Татьяна Николаевна: +37529*******</span>              */}
+          <span className='exo-text header'>Контакты для связи в день свадьбы</span>
+          <span className='exo-text b1'>Организатор/Координатор Щука Татьяна: 8033 341-17-66</span>
+          <span className='exo-text b1'>{'Балицкая Татьяна Николаевна (мама Кати)'}: +375 29 677-43-16</span>
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/example/public_html/
+    - export DEPLOYPATH=/home/weddingkat/public_html/
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp blue-heart-svgrepo-com.svg $DEPLOYPATH
     - /bin/cp -R assets $DEPLOYPATH

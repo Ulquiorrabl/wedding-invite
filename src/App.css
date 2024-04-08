@@ -222,7 +222,7 @@ span.place-text {
     outline-color: var(--highlight-color);
   }
 
-  80% {
+  60% {
     outline-color: pink;
   }
 
@@ -240,7 +240,7 @@ span.place-text {
     border-color: var(--highlight-color);
   }
 
-  80% {
+  60% {
     border-color: pink;
   }
 
@@ -254,15 +254,7 @@ span.place-text {
     border-color: pink;
   }
 
-  20% {
-    border-color: var(--highlight-color);
-  }
-
-  40% {
-    border-color: pink;
-  }
-
-  80% {
+  60% {
     border-color: var(--highlight-color);
   }
 

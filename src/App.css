@@ -46,6 +46,7 @@ a:hover {
   padding: 15% 0;
   max-height: 35rem;
   border-bottom: 5px solid var(--support-color);
+  animation: border-white-blue 20s infinite;
 }
 
 .header-content-div,
@@ -167,7 +168,7 @@ span {
   gap: 1.5rem;
   padding-top: clamp(.1rem, 2.5vw, 1rem);
   padding-bottom: 5rem;
-  outline: 15px solid var(--support-color);
+  outline: 5px solid var(--support-color);
   outline-offset: -15px;
   animation: outline-white-blue 20s infinite;
 }
@@ -242,7 +243,6 @@ span.place-text {
 
   .header-content-div {
     border-bottom: 10px solid var(--support-color);
-    animation: border-white-blue 20s infinite;
   }
 
   .content-feed {

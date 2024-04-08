@@ -111,6 +111,7 @@ span {
 .photo-box-shadow {
   box-shadow: 5px 5px 0 var(--support-color);
   border: 5px solid var(--highlight-color);
+  animation: border-more-white-blue 10s infinite;
 }
 
 .b1 {
@@ -204,7 +205,7 @@ span.place-text {
   }
 
   60% {
-    color: black;
+    color: pink;
   }
 
   100% {
@@ -221,8 +222,8 @@ span.place-text {
     outline-color: var(--highlight-color);
   }
 
-  60% {
-    outline-color: black;
+  80% {
+    outline-color: pink;
   }
 
   100% {
@@ -239,12 +240,34 @@ span.place-text {
     border-color: var(--highlight-color);
   }
 
-  60% {
-    border-color: black;
+  80% {
+    border-color: pink;
   }
 
   100% {
     border-color: var(--support-color);
+  }
+}
+
+@keyframes border-more-white-blue {
+  0% {
+    border-color: pink;
+  }
+
+  20% {
+    border-color: var(--highlight-color);
+  }
+
+  40% {
+    border-color: pink;
+  }
+
+  80% {
+    border-color: var(--highlight-color);
+  }
+
+  100% {
+    border-color: pink;
   }
 }
 
@@ -254,7 +277,7 @@ span.place-text {
   }
 
   .header-content-div {
-    border-bottom: 10px solid var(--support-color);
+    border-width: 10px;
   }
 
   .content-feed {
@@ -264,6 +287,7 @@ span.place-text {
   .photo-box-shadow {
     box-shadow: 10px 10px 0 var(--support-color);
     border: 10px solid var(--highlight-color);
+    animation: border-more-white-blue 20s infinite;
   }
 
   .content-feed-content,
@@ -287,6 +311,7 @@ span.place-text {
   .content-feed-content {
     animation: outline-white-blue 20s infinite;
   }
+
 
   .header-img-container {
     flex-direction: row;

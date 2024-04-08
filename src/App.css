@@ -46,7 +46,7 @@ a:hover {
   padding: 15% 0;
   max-height: 35rem;
   border-bottom: 5px solid var(--support-color);
-  animation: border-white-blue 20s infinite;
+  animation: border-white-blue 10s infinite;
 }
 
 .header-content-div,
@@ -86,7 +86,7 @@ a:hover {
 
 .initials {
   font-size: clamp(20px, 20vw, 150px);
-  animation: color-white-blue 20s infinite;
+  animation: color-white-blue 10s infinite;
 }
 
 span {
@@ -109,8 +109,8 @@ span {
 }
 
 .photo-box-shadow {
-  box-shadow: 10px 10px 0 var(--support-color);
-  border: 10px solid var(--highlight-color);
+  box-shadow: 5px 5px 0 var(--support-color);
+  border: 5px solid var(--highlight-color);
 }
 
 .b1 {
@@ -170,7 +170,7 @@ span {
   padding-bottom: 5rem;
   outline: 5px solid var(--support-color);
   outline-offset: -15px;
-  animation: outline-white-blue 20s infinite;
+  animation: outline-white-blue 10s infinite;
 }
 
 
@@ -199,8 +199,12 @@ span.place-text {
     color: var(--support-color);
   }
 
-  50% {
+  30% {
     color: var(--highlight-color);
+  }
+
+  60% {
+    color: black;
   }
 
   100% {
@@ -213,8 +217,12 @@ span.place-text {
     outline-color: var(--support-color);
   }
 
-  50% {
+  30% {
     outline-color: var(--highlight-color);
+  }
+
+  60% {
+    outline-color: black;
   }
 
   100% {
@@ -227,8 +235,12 @@ span.place-text {
     border-color: var(--support-color);
   }
 
-  50% {
+  30% {
     border-color: var(--highlight-color);
+  }
+
+  60% {
+    border-color: black;
   }
 
   100% {
@@ -249,6 +261,11 @@ span.place-text {
     max-width: 1200px;
   }
 
+  .photo-box-shadow {
+    box-shadow: 10px 10px 0 var(--support-color);
+    border: 10px solid var(--highlight-color);
+  }
+
   .content-feed-content,
   .background-transparent {
     max-width: 1200px;
@@ -257,6 +274,18 @@ span.place-text {
     outline-offset: -30px;
     padding-top: 1rem;
     padding-bottom: 10rem;
+  }
+
+  .header-content-div {
+    animation: border-white-blue 20s infinite;
+  }
+
+  .initials {
+    animation: color-white-blue 20s infinite;
+  }
+
+  .content-feed-content {
+    animation: outline-white-blue 20s infinite;
   }
 
   .header-img-container {

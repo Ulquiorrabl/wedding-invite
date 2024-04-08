@@ -85,6 +85,7 @@ a:hover {
 
 .initials {
   font-size: clamp(20px, 20vw, 150px);
+  animation: color-white-blue 20s infinite;
 }
 
 span {
@@ -108,6 +109,7 @@ span {
 
 .photo-box-shadow {
   box-shadow: 10px 10px 0 var(--support-color);
+  border: 10px solid var(--highlight-color);
 }
 
 .b1 {
@@ -138,9 +140,17 @@ span {
   justify-content: center;
 }
 
+/* .header-content-div,
+.content-feed-content {
+  background-color: rgb(0, 0, 0, .5)
+} */
+
 .header-content-div,
 .content-feed-content {
-  background-color: rgb(0, 0, 0, .7)
+  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite; */
+  background-color: rgb(0, 0, 0, .6)
 }
 
 .content-feed-content {
@@ -157,12 +167,15 @@ span {
   gap: 1.5rem;
   padding-top: clamp(.1rem, 2.5vw, 1rem);
   padding-bottom: 5rem;
-  outline: 5px solid var(--support-color);
+  outline: 15px solid var(--support-color);
   outline-offset: -15px;
+  animation: outline-white-blue 20s infinite;
 }
 
+
+
 span.place-text {
-  color: var(--support-color);
+  color: var(--highlight-color);
 }
 
 .main-container {
@@ -180,6 +193,48 @@ span.place-text {
   align-items: center;
 }
 
+@keyframes color-white-blue {
+  0% {
+    color: var(--support-color);
+  }
+
+  50% {
+    color: var(--highlight-color);
+  }
+
+  100% {
+    color: var(--support-color);
+  }
+}
+
+@keyframes outline-white-blue {
+  0% {
+    outline-color: var(--support-color);
+  }
+
+  50% {
+    outline-color: var(--highlight-color);
+  }
+
+  100% {
+    outline-color: var(--support-color);
+  }
+}
+
+@keyframes border-white-blue {
+  0% {
+    border-color: var(--support-color);
+  }
+
+  50% {
+    border-color: var(--highlight-color);
+  }
+
+  100% {
+    border-color: var(--support-color);
+  }
+}
+
 @media screen and (min-width: 1300px) {
   .header-img-icon {
     height: 5rem;
@@ -187,6 +242,7 @@ span.place-text {
 
   .header-content-div {
     border-bottom: 10px solid var(--support-color);
+    animation: border-white-blue 20s infinite;
   }
 
   .content-feed {
@@ -197,7 +253,7 @@ span.place-text {
   .background-transparent {
     max-width: 1200px;
     padding: 0 2rem;
-    outline: 10px solid var(--support-color);
+    outline: 15px solid var(--support-color);
     outline-offset: -30px;
     padding-top: 1rem;
     padding-bottom: 10rem;

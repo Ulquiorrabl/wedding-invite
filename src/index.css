@@ -1,6 +1,7 @@
 :root {
   --main-color: whitesmoke;
-  --support-color: rgb(190 228 251);
+  --support-color: white;
+  --highlight-color: rgb(190 228 251);
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -11,12 +12,29 @@
   color: var(--main-color);
   background-color: var(--support-color);
 
+  animation: background-white-blue 20s infinite;
+
+
   overflow-x: hidden;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes background-white-blue {
+  0% {
+    background-color: var(--support-color);
+  }
+
+  50% {
+    background-color: var(--highlight-color);
+  }
+
+  100% {
+    background-color: var(--support-color);
+  }
 }
 
 a {
